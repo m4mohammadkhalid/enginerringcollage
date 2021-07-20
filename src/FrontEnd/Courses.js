@@ -22,8 +22,8 @@ export default function BasicModal() {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-      <Button onClick={handleOpen}>Open modal</Button>
+    <>
+      <Button sx={style} onClick={handleOpen}>Courses</Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -31,14 +31,37 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+          <div className="container-fluid">
+                <div className="row">
+                        <div className="col-4">
+                                <Typography id="modal-modal-title" variant="h6" component="h2">
+                                    Text in a modal
+                                </Typography>
+                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                </Typography>
+                        </div>
+                        <div className="col-4">
+                                <Typography id="modal-modal-title" variant="h6" component="h2">
+                                    Text in a modal
+                                </Typography>
+                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                </Typography>
+                        </div>
+                        <div className="col-4">
+                                <Typography id="modal-modal-title" variant="h6" component="h2">
+                                    Text in a modal
+                                </Typography>
+                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                    Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                                </Typography>
+                        </div>
+                </div>
+          </div>
         </Box>
       </Modal>
-    </div>
+      
+    </>
   );
 }

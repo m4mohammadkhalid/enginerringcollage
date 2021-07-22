@@ -87,6 +87,8 @@ const NoticeBoard = () => {
                 </div>
               </div>
             </div>
+          
+          
           </div>
         </div>
       </div>
